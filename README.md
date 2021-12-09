@@ -13,7 +13,7 @@ four algorithms to get reasons for heart disease and create a model with the max
 possible accuracy.
 </h4>
 <br>
-<img style="width:60% ; height:30% ; " src="https://github.com/shuvra-matrix/HEART_DISEASE_PREDICTION/blob/master/static/images/no1.png?raw=true" >
+<img style="width:60% ; height:20% ; " src="https://github.com/shuvra-matrix/HEART_DISEASE_PREDICTION/blob/master/static/images/no1.png?raw=true" >
 <br>
 <h4>In This project using KNN algorithm to predict the accuracy where K=4 then I got 
 about 85.71% accuracy. And it is highest from other algorithem what i got </h4>
