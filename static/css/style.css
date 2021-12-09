@@ -108,6 +108,9 @@ svg{
     .splash {
         display: none;
     }
+    body{
+        background-color: lavender !important;
+    }
     .svgs {
         margin-top: 4rem;
     }
