@@ -51,7 +51,6 @@ def heart_disease(request):
         my_dict ={
             "message" : message,
         }
-        print(list)
         del request.session['list']
         return render(request, "heart_desease_prediction.html",context=my_dict)
     

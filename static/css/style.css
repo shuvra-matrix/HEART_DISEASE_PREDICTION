@@ -1,13 +1,34 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+body {
+
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.432);
+
 }
 
 
+.text_div{
+    text-align: center;
+    width: 100%;
+    background-color: rgb(3, 8, 54);
+    color: white;
+    padding-bottom: 5px;
+  
+
+}
+.main_text{
+    font-size: 1.5rem;
+}
+
 .main_div{
-    width: 30%;
-    margin: 3rem auto;
+    width: 25%;
+    margin: 1.5rem auto;
  
 }
 
@@ -15,16 +36,118 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 1rem auto;
+    margin: .5rem auto;
 }
 
 .input{
     width: 100%;
-    margin-top: 5px;
+    margin-top: 6px;
     background-color: white;
     border: 1px solid black;
+    padding: .4rem;
+    border-radius: 6px;
 }
 
 .button_div {
     text-align: center;
 }
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    justify-content: space-between;
+    
+}
+
+.splash {
+      position: absolute;
+      top: 0%;
+      right: 0%;
+      height: 100%;
+      z-index: -1;
+}
+
+
+.intro_text{
+    margin-top: 10%;
+     flex: 1 1 30rem;
+
+}
+
+.svgs {
+    flex: 1 1 40rem;
+}
+.intro_main_text{
+    font-size: 1.2rem;
+}
+
+svg{
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 1240px) {
+    .svgs {
+        margin-top: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 1146px) {
+    .splash {
+        display: none;
+    }
+    .svgs {
+        margin-top: 4rem;
+    }
+    .intro_main_text {
+        width: 85%;
+        margin-left: 6%;
+        margin-bottom: 1rem;
+    }
+
+}
+@media screen and (max-width: 1070px) {
+.main_div {
+    width: 40%;
+    margin: 1.5rem auto;
+
+}
+}
+
+@media screen and (max-width: 732px) {
+
+   .input {
+       padding: .1rem;
+       
+   }
+}
+
+
+@media screen and (max-width: 550px) {
+
+    .main_div {
+        width: 60%;
+        margin: 1.5rem auto;
+
+    }
+    label {
+        font-size: .8rem;
+    }
+
+}
+
+
+@media screen and (max-width: 550px) {
+ 
+    .intro_main_text {
+  
+     font-size: 1rem;
+    }
+
+}
+

@@ -1,19 +1,4 @@
-{% extends 'header.html' %}
-{% load static %}
-{% block body_block %}
-
-<div class="intro">
-    <div style="width: 40%;" class="intro_text">
-
-       <p class="intro_main_text">Arrow Health is a disease predator website. Here You can predict your disease by Yourself. We use Machine Learning Algorithm for disease Prediction.</p>
-       <div style="text-align: center;">
-           <button type="submit" class="btn btn-secondary">Read More!</button>
-       </div> 
-
-    </div>
-
-    <div class="svgs" >
-       <svg width="1006" height="646" viewBox="0 0 1006 646" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1006" height="646" viewBox="0 0 1006 646" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_1_2)">
 <path opacity="0.1" d="M334.453 645.637C383.445 645.637 423.16 639.854 423.16 632.721C423.16 625.588 383.445 619.805 334.453 619.805C285.462 619.805 245.746 625.588 245.746 632.721C245.746 639.854 285.462 645.637 334.453 645.637Z" fill="#6C63FF"/>
 <path opacity="0.1" d="M816.651 646C877.785 646 927.344 640.217 927.344 633.084C927.344 625.951 877.785 620.168 816.651 620.168C755.517 620.168 705.959 625.951 705.959 633.084C705.959 640.217 755.517 646 816.651 646Z" fill="#6C63FF"/>
@@ -150,11 +135,3 @@
 </clipPath>
 </defs>
 </svg>
-
-            <img class="splash" src="{% static 'images/Vector.svg' %}" alt="">
-
-    </div>
-
-</div>
-
-{% endblock %}
