@@ -19,5 +19,6 @@ possible accuracy.
 about 85.71% accuracy. And it is highest from other algorithem what i got </h4>
 <br>
 Project Files : <a href="https://github.com/shuvra-matrix/project_file_heart_disease">https://github.com/shuvra-matrix/project_file_heart_disease</a> 
-
-
+<br>
+<br>
+Note* : This disease predicton system is not 100% correct. If you have any health related issue please consult with your doctor about it.  
