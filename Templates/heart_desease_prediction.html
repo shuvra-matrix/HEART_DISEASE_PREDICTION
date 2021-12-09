@@ -1,0 +1,161 @@
+{% extends 'header.html' %}
+{% block body_block %}
+<form action="{%url 'pre:heart' %}" method="POST">
+{% csrf_token %}
+<div class="main_div">
+    <p>Heart Disease Predator</p>
+    <p>Please Enter Your Details</p>
+    <div class="sub_class">
+        <div>
+             <label for="">Your Age:</label>
+        </div>
+        <div>
+            <input class="input" type="text" name="age">
+        </div>
+        
+    </div>
+
+    <div class="sub_class">
+        <div>
+             <label for="">Gender:</label>
+        </div>
+        <div>
+            <select class="input" name="sex" id="">
+                <option value="">Select Your Gender</option>
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="sub_class">
+        <div>
+             <label for="">Chest Pain Type:</label>
+        </div>
+        <div>
+            <select name="cp" id="" class="input">
+                <option value="">Select Your Chest Pain Type</option>
+                <option value="1">Typical Angina</option>
+                <option value="2">Atypical Angina</option>
+                <option value="3">Non-Anginal Pain</option>
+                <option value="4">Asymptomatic Resting Blood Pressure/No Pain</option>
+            </select>
+        </div>
+    </div>
+    <div class="sub_class">
+        <div>
+             <label for="">Resting Blood Pressure:</label>
+        </div>
+        <div>
+            <input type="text" name="bp" class="input">
+        </div>
+        
+    </div>
+     <div class="sub_class">
+        <div>
+             <label for="">Serum Cholesterol mg/dl:</label>
+        </div>
+        <div>
+            <input type="text" name="chol" class="input">
+        </div>
+        
+    </div>
+     <div class="sub_class">
+        <div>
+             <label for="">Fasting Blood Sugure mg/dl:</label>
+        </div>
+        <div>
+            <input type="text" name="fbs" class="input">
+        </div>
+        
+    </div>
+    <div class="sub_class">
+        <div>
+             <label for="">Resting Electrocardiographic Result:</label>
+        </div>
+        <div>
+            <select name="rer" id="" class="input">
+                <option value="">Select Resting Electrocardiographic Result </option>
+                <option value="0">Nothing To Note</option>
+                <option value="1">ST-T Wave Abnormality</option>
+                <option value="2">Possible Or Definite Left Vertricular Hypertrophy</option>
+            </select>
+        </div>
+        
+    </div>
+
+    <div class="sub_class">
+        <div>
+             <label for="">Maximum Heart Rate:</label>
+        </div>
+        <div>
+            <input type="text" name="heart_rate" class="input">
+        </div>
+        
+    </div>
+    <div class="sub_class">
+        <div>
+             <label for="">Exercise Induced Angina:</label>
+        </div>
+        <div>
+            <select name="agina" id="" class="input">
+                <option value="">Select Options</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </div>
+        
+    </div>
+     <div class="sub_class">
+        <div>
+             <label for="">Oldpeak:</label>
+        </div>
+        <div>
+            <input type="text" name="oldpeak" class="input">
+        </div>
+        
+    </div>
+     <div class="sub_class">
+        <div>
+             <label for="">Slope:</label>
+        </div>
+        <div>
+            <select name="slope" id="" class="input">
+                <option value="">Select Slope Type</option>
+                <option value="0">Upsloping</option>
+                <option value="1">Flatsloping</option>
+                <option value="2">Downsloping</option>
+            </select>
+        </div>
+    </div>
+    <div class="sub_class">
+        <div>
+             <label for="">Ca:</label>
+        </div>
+        <div>
+            <input type="text" name="ca" class="input">
+        </div>
+        
+    </div>
+     <div class="sub_class">
+        <div>
+             <label for="">Thal:</label>
+        </div>
+        <div>
+            <input type="text" name="thal" class="input">
+        </div>
+        
+    </div>
+    <div class="button_div">
+         <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+   {% if message %}
+    <div class="sub_class">
+        <p>{{message}}</p>
+    </div>
+    {% endif %}
+</form>   
+
+</div>
+
+{% endblock %}
