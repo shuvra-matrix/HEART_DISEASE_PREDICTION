@@ -11,6 +11,9 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.432);
 
 }
+a{
+    font-size: 1.1rem;
+}
 
 
 .text_div{
@@ -97,6 +100,20 @@ svg{
     width: 100%;
 }
 
+#heart{
+    animation: myanimation 2s infinite;
+}
+
+@keyframes myanimation {
+    0%{
+        fill: #F4233C;
+    }
+    50%{
+        fill: #c9081e;
+    }
+}
+
+
 @media screen and (max-width: 1240px) {
     .svgs {
         margin-top: 2rem;
@@ -138,6 +155,9 @@ svg{
    .main_text {
        font-size: 1.1rem;
    }
+   a {
+       font-size: 1rem;
+   }
 }
 
 
@@ -158,6 +178,7 @@ svg{
 
         font-size: 1rem;
     }
+
 
 }
 
