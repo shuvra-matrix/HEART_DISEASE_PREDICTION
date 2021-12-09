@@ -6,7 +6,7 @@
     <p class="main_text">Heart Disease Predictor  {% if message %}<h4>Your Result: <span class="{{message}}"> {{message}}</span></h4></p>{% endif %}
 </div>
 
-
+<div style="width: 100%;  background-color: lavender !important; min-height: 80vh; position: absolute;">
 <form action="{%url 'pre:heart' %}" method="POST">
 
 {% csrf_token %}
@@ -152,12 +152,12 @@
         </div>
         
     </div>
-    <div class="button_div">
-         <button style="padding: 1rem auto;" class="btn btn-success" type="submit">Submit</button>
+    <div class="button_div" style="width: 100%; margin-top: .4rem;">
+         <button style=" background-color: blueviolet  !important; width: 100%;  border-radius: 6px !important; " class="btn btn-success" type="submit">Submit</button>
     </div>
   
 </form>   
-
+</div>
 </div>
 
 {% endblock %}
