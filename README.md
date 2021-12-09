@@ -1,5 +1,5 @@
 # HEART_DISEASE_PREDICTION
-Live link:
+Web App link:
 <a href="https://shuvramatrixno2.pythonanywhere.com/">https://shuvramatrixno2.pythonanywhere.com</a>
 
 <h4> My Project aims to foresee the odds of having heart disease as probable cause of 
