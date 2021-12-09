@@ -3,7 +3,7 @@
 {% block body_block %}
 
 <div class="text_div">
-    <p class="main_text">Heart Disease Predator</p>
+    <p class="main_text">Heart Disease Predator  {% if message %}<h4>Your Result: <span class="{{message}}"> {{message}}</span></h4></p>{% endif %}
 </div>
 
 
@@ -16,7 +16,7 @@
              <label for="">Your Age:</label>
         </div>
         <div>
-            <input class="input" type="text" name="age">
+            <input class="input" type="text" name="age" required>
         </div>
         
     </div>
@@ -26,7 +26,7 @@
              <label for="">Gender:</label>
         </div>
         <div>
-            <select class="input" name="sex" id="">
+            <select class="input" name="sex" id="" required>
                 <option value="">Select Your Gender</option>
                 <option value="1">Male</option>
                 <option value="0">Female</option>
@@ -39,7 +39,7 @@
              <label for="">Chest Pain Type:</label>
         </div>
         <div>
-            <select name="cp" id="" class="input">
+            <select name="cp" id="" class="input" required>
                 <option value="">Select Your Chest Pain Type</option>
                 <option value="1">Typical Angina</option>
                 <option value="2">Atypical Angina</option>
@@ -53,7 +53,7 @@
              <label for="">Resting Blood Pressure:</label>
         </div>
         <div>
-            <input type="text" name="bp" class="input">
+            <input type="text" name="bp" class="input" required>
         </div>
         
     </div>
@@ -62,7 +62,7 @@
              <label for="">Serum Cholesterol mg/dl:</label>
         </div>
         <div>
-            <input type="text" name="chol" class="input">
+            <input type="text" name="chol" class="input" required>
         </div>
         
     </div>
@@ -71,7 +71,7 @@
              <label for="">Fasting Blood Sugure mg/dl:</label>
         </div>
         <div>
-            <input type="text" name="fbs" class="input">
+            <input type="text" name="fbs" class="input" required>
         </div>
         
     </div>
@@ -80,7 +80,7 @@
              <label for="">Resting Electrocardiographic Result:</label>
         </div>
         <div>
-            <select name="rer" id="" class="input">
+            <select name="rer" id="" class="input" required>
                 <option value="">Select Resting Electrocardiographic Result </option>
                 <option value="0">Nothing To Note</option>
                 <option value="1">ST-T Wave Abnormality</option>
@@ -95,7 +95,7 @@
              <label for="">Maximum Heart Rate:</label>
         </div>
         <div>
-            <input type="text" name="heart_rate" class="input">
+            <input type="text" name="heart_rate" class="input" required>
         </div>
         
     </div>
@@ -104,7 +104,7 @@
              <label for="">Exercise Induced Angina:</label>
         </div>
         <div>
-            <select name="agina" id="" class="input">
+            <select name="agina" id="" class="input" required>
                 <option value="">Select Options</option>
                 <option value="1">Yes</option>
                 <option value="0">No</option>
@@ -117,7 +117,7 @@
              <label for="">Oldpeak:</label>
         </div>
         <div>
-            <input type="text" name="oldpeak" class="input">
+            <input type="text" name="oldpeak" class="input" required>
         </div>
         
     </div>
@@ -126,7 +126,7 @@
              <label for="">Slope:</label>
         </div>
         <div>
-            <select name="slope" id="" class="input">
+            <select name="slope" id="" class="input" required>
                 <option value="">Select Slope Type</option>
                 <option value="0">Upsloping</option>
                 <option value="1">Flatsloping</option>
@@ -139,7 +139,7 @@
              <label for="">Ca:</label>
         </div>
         <div>
-            <input type="text" name="ca" class="input">
+            <input type="text" name="ca" class="input" required>
         </div>
         
     </div>
@@ -148,18 +148,14 @@
              <label for="">Thal:</label>
         </div>
         <div>
-            <input type="text" name="thal" class="input">
+            <input type="text" name="thal" class="input" required>
         </div>
         
     </div>
     <div class="button_div">
-         <button class="btn btn-primary" type="submit">Submit</button>
+         <button style="padding: 1rem auto;" class="btn btn-success" type="submit">Submit</button>
     </div>
-   {% if message %}
-    <div class="sub_class">
-        <p>{{message}}</p>
-    </div>
-    {% endif %}
+  
 </form>   
 
 </div>

@@ -16,14 +16,21 @@ body {
 .text_div{
     text-align: center;
     width: 100%;
-    background-color: rgb(3, 8, 54);
+    background-color: rgb(75, 40, 139);
     color: white;
-    padding-bottom: 5px;
+    padding-bottom: 1px;
   
 
 }
+.Positive{
+    color: rgb(83, 214, 22);
+}
+.Negative{
+    color: red;
+}
+
 .main_text{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .main_div{
@@ -125,6 +132,9 @@ svg{
        padding: .1rem;
        
    }
+   .main_text {
+       font-size: 1.1rem;
+   }
 }
 
 
@@ -138,16 +148,14 @@ svg{
     label {
         font-size: .8rem;
     }
-
-}
-
-
-@media screen and (max-width: 550px) {
- 
+    .main_text {
+        font-size: 1rem;
+    }
     .intro_main_text {
-  
-     font-size: 1rem;
+
+        font-size: 1rem;
     }
 
 }
+
 

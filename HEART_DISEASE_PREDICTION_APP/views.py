@@ -45,9 +45,9 @@ def heart_disease(request):
         project = joblib.load("heart_model.sav")
         ans = project.predict([list])
         if ans == 1 :
-            message = "Report Positive"
+            message = "Positive"
         elif ans == 0 :
-            message = "Report Negative"
+            message = "Negative"
         my_dict ={
             "message" : message,
         }
