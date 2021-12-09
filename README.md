@@ -13,7 +13,7 @@ four algorithms to get reasons for heart disease and create a model with the max
 possible accuracy.
 </h4>
 <br>
-<img src="https://github.com/shuvra-matrix/HEART_DISEASE_PREDICTION/blob/master/static/images/no1.png?raw=true" >
+<img style="width:100px" src="https://github.com/shuvra-matrix/HEART_DISEASE_PREDICTION/blob/master/static/images/no1.png?raw=true" >
 <br>
 <h4>In This project using KNN algorithm to predict the accuracy where K=4 then I got 
 about 85.71% accuracy. And it is highest from other algorithem what i got </h4>
@@ -22,6 +22,7 @@ about 85.71% accuracy. And it is highest from other algorithem what i got </h4>
 <h4> Here i use joblib to save my machine leariing model </h4>
 <h4> Joblib is part of the SciPy ecosystem and provides utilities for pipelining Python jobs.It provides utilities for saving and loading Python objects that make use of NumPy data structures, efficiently.This can be useful for some machine learning algorithms that require a lot of parameters or store the entire dataset (like K-Nearest Neighbors). </h4>
 
+<h4></h4>
 
   
 Project Files : <a href="https://github.com/shuvra-matrix/project_file_heart_disease">https://github.com/shuvra-matrix/project_file_heart_disease</a> 
