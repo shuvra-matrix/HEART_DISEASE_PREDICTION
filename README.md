@@ -21,9 +21,12 @@ about 85.71% accuracy. And it is highest from other algorithem what i got </h4>
 <h4>Now i use this trained model in django to make a functional web app for user . Where user can check there result by providing there required health related data . </h4>
 <h4> Here i use joblib to save my machine leariing model </h4>
 <h4> Joblib is part of the SciPy ecosystem and provides utilities for pipelining Python jobs.It provides utilities for saving and loading Python objects that make use of NumPy data structures, efficiently.This can be useful for some machine learning algorithms that require a lot of parameters or store the entire dataset (like K-Nearest Neighbors). </h4>
-
-<h4></h4>
-
+<br>
+<br>
+<img style="width:700px" src="https://github.com/shuvra-matrix/HEART_DISEASE_PREDICTION/blob/master/static/images/no2.png?raw=true" >
+<br>
+<h4>As you can see in this image , you need to fill up those fields with patients data . After submit this you can see test report Negative or Positive </h4>
+<br>
   
 Project Files : <a href="https://github.com/shuvra-matrix/project_file_heart_disease">https://github.com/shuvra-matrix/project_file_heart_disease</a> 
 <br>
