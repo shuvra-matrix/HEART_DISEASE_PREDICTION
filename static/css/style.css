@@ -53,10 +53,20 @@ a{
     width: 100%;
     margin-top: 6px;
     background-color: white;
-    border: 1px solid black;
+     border: 1px rgb(93, 69, 201) solid;
     padding: .4rem;
     border-radius: 6px;
 }
+
+
+
+.input:focus {
+    outline: none !important;
+    border-color: #5435a8;
+    box-shadow: 0 0 10px #6d67be;
+
+}
+
 
 .button_div {
     text-align: center;
