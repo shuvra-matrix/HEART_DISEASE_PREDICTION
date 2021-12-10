@@ -26,10 +26,11 @@ a{
 
 }
 .Positive{
-    color: rgb(83, 214, 22);
+    
+    color: red;
 }
 .Negative{
-    color: red;
+    color: rgb(83, 214, 22);
 }
 
 .main_text{
