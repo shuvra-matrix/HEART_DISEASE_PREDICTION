@@ -1,1 +1,1 @@
-web: waitress-serve --port=$PORT HEART_DISEASE_PREDICTION.wsgi:application
+web: gunicorn HEART_DISEASE_PREDICTION.wsgi --log-file -
