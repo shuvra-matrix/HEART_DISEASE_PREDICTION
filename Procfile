@@ -1,0 +1,1 @@
+web: waitress-serve --port=$PORT HEART_DISEASE_PREDICTION.wsgi:application
