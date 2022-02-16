@@ -16,7 +16,7 @@ possible accuracy.
 <img style="width: 700px ; height:20% ; " src="https://github.com/shuvra-matrix/HEART_DISEASE_PREDICTION/blob/master/static/images/no1.png?raw=true" >
 <br>
 <h4>In This project using KNN algorithm to predict the accuracy where K=4 then I got 
-about 85.71% accuracy. And it is highest from other algorithem what i got </h4>
+about 86.89% accuracy. And it is highest from other algorithem what i got </h4>
 <br>
 <h4>Now i use this trained model in django to make a functional web app for user . Where user can check there result by providing there required health related data . </h4>
 <h4> Here i use joblib to save my machine leariing model </h4>
