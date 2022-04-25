@@ -104,4 +104,13 @@ def about_heart(request):
     return render(request, "about_heart.html")
 
 
+def about1(request):
+    return render(request, "about1.html")
 
+
+def about2(request):
+    return render(request, "about2.html")
+
+
+def about3(request):
+    return render(request, "about3.html")

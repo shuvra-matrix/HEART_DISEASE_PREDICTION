@@ -168,6 +168,17 @@ a{
 }
 
 
+.about1_main{
+    width: 60%;
+    margin: 2rem auto;
+  
+
+}
+
+h2{
+    margin: 1rem 0rem;
+}
+
 @keyframes myanimation {
     0%{
         fill: #F4233C;
@@ -269,6 +280,13 @@ a{
     font-size: 1rem;
     padding: .5rem;
     
+}
+
+.about1_main{
+    width: 85%;
+    margin: 1rem auto;
+  
+
 }
 
 }
