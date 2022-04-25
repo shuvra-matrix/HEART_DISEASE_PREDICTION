@@ -1,0 +1,151 @@
+{% extends 'header.html' %}
+
+{% block body_block %}
+
+<div class="text_div">
+    <p class="main_text">Heart Disease Predictor 2.O  {% if message %}<h4>Your Result: <span class="{{message}}"> {{message}}</span></h4></p>{% endif %}
+</div>
+
+<div style="width: 100%;  background-color: lavender !important; min-height: 80vh; position: absolute;">
+<form action="{%url 'pre:heart2' %}" method="POST">
+
+{% csrf_token %}
+<div class="main_div">
+    <div class="sub_class">
+        <div>
+             <label for="">Your Age:</label>
+        </div>
+        <div>
+            <input class="input" type="text" name="age" required>
+        </div>
+        
+    </div>
+
+    <div class="sub_class">
+        <div>
+             <label for="">Gender:</label>
+        </div>
+        <div>
+            <select class="input" name="gender" id="" required>
+                <option value="">Select Your Gender</option>
+                <option value="0">Female</option>
+                <option value="1">Male</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="sub_class">
+        <div>
+             <label for="">Enter Your Height (In CM):</label>
+        </div>
+        <div>
+            <input class="input" type="text" name="height" required>
+        </div>
+        
+    </div>
+    <div class="sub_class">
+        <div>
+             <label for="">Enter Your Weight (In KG):</label>
+        </div>
+        <div>
+            <input class="input" type="text" name="weight" required>
+        </div>
+        
+    </div>
+    <div class="sub_class">
+        <div>
+             <label for="">Systolic blood pressure:</label>
+        </div>
+        <div>
+            <input type="text" name="bp_hi" class="input" required>
+        </div>
+        
+    </div>
+    <div class="sub_class">
+        <div>
+             <label for="">Diastolic blood pressure:</label>
+        </div>
+        <div>
+            <input type="text" name="bp_lo" class="input" required>
+        </div>
+        
+    </div>
+     <div class="sub_class">
+        <div>
+             <label for="">Cholesterol:</label>
+        </div>
+        <div>
+            <select class="input" name="cholesterol" id="" required>
+                <option value="">Select cholesterol Type</option>
+                <option value="1">Normal</option>
+                <option value="2">Above Normal</option>
+                 <option value="3">Well Above Normal</option>
+            </select>
+        </div>
+        
+    </div>
+     <div class="sub_class">
+        <div>
+             <label for="">Glucose:</label>
+        </div>
+        <div>
+            <select class="input" name="gluc" id="" required>
+                <option value="">Select cholesterol Type</option>
+                <option value="1">Normal</option>
+                <option value="2">Above Normal</option>
+                 <option value="3">Well Above Normal</option>
+            </select>
+        </div>
+        
+    </div>
+    
+
+    <div class="sub_class">
+        <div>
+             <label for="">Smoke Habit:</label>
+        </div>
+        <div>
+            <select class="input" name="smoke" id="" required>
+                <option value="">Select Smoke Habit</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </div>
+        
+    </div>
+    <div class="sub_class">
+        <div>
+             <label for="">Alcohol Habit:</label>
+        </div>
+        <div>
+            <select class="input" name="alcohol" id="" required>
+                <option value="">Select Alcohol Intake</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </div>
+        
+    </div>
+     <div class="sub_class">
+        <div>
+             <label for="">Physical Activity:</label>
+        </div>
+        <div>
+            <select class="input" name="activity" id="" required>
+                <option value="">Select Physical Activity Type</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </div>
+        
+    </div>
+    
+    <div class="button_div" style="width: 100%; margin-top: .4rem;">
+         <button style=" background-color: blueviolet  !important; width: 100%;  border-radius: 6px !important; " class="btn btn-success" type="submit">Submit</button>
+    </div>
+  
+</form>   
+</div>
+</div>
+
+{% endblock %}
