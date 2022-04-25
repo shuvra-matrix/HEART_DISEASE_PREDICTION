@@ -114,3 +114,11 @@ def about2(request):
 
 def about3(request):
     return render(request, "about3.html")
+
+
+def ins(request):
+    return render(request, "ins.html")
+
+
+def about4(request):
+    return render(request, "about4.html")

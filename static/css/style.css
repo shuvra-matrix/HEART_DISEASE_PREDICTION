@@ -175,6 +175,16 @@ a{
 
 }
 
+.ins_main{
+    width: 60%;
+    margin: 2rem auto;
+}
+.main_about{
+     width: 60%;
+    margin: 2rem auto;
+  
+}
+
 h2{
     margin: 1rem 0rem;
 }
@@ -287,6 +297,14 @@ h2{
     margin: 1rem auto;
   
 
+}
+.ins_main{
+    width: 95%;
+    margin: 1rem auto;
+}
+.main_about{
+    width: 90%;
+    margin: 1rem auto;
 }
 
 }

@@ -12,4 +12,6 @@ urlpatterns = [
     path("About Heart Disease", views.about1, name="about1"),
     path("Risk for Heart Disease", views.about2, name="about2"),
     path("Prevent Heart Disease", views.about3, name="about3"),
+    path("Instruction", views.ins, name="ins"),
+    path("About", views.about4, name="about4"),
 ]
