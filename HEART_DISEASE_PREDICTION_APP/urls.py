@@ -8,4 +8,5 @@ urlpatterns = [
     path('',views.index,name="index" ),
     path("heart/",views.heart_disease,name="heart"),
     path("heart2/",views.heart_prediction_2,name="heart2"),
+    path("Heart Disease", views.about_heart,name="about" ),
 ]

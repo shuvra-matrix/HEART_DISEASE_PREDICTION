@@ -96,3 +96,12 @@ def heart_prediction_2(request):
         return render(request, "heart_desease_prediction_2.html",context=my_dict)
         
     return render(request, "heart_desease_prediction_2.html")
+
+
+
+def about_heart(request):
+    
+    return render(request, "about_heart.html")
+
+
+
