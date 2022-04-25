@@ -55,3 +55,44 @@ def heart_disease(request):
         return render(request, "heart_desease_prediction.html",context=my_dict)
     
     return render(request, "heart_desease_prediction.html")
+
+
+def heart_prediction_2(request):
+    if request.method == "POST":
+        age = int(request.POST.get("age"))
+        gender = int(request.POST.get("gender"))
+        height = int(request.POST.get("height"))
+        weight = int(request.POST.get("weight"))
+        bp_hi = int(request.POST.get("bp_hi"))
+        bp_lo = int(request.POST.get("bp_lo"))
+        cholestrol = int(request.POST.get("cholesterol"))
+        gluc = int(request.POST.get("gluc"))
+        smoke = int(request.POST.get("smoke"))
+        alcohol = int(request.POST.get("alcohol"))
+        activity = int(request.POST.get("activity"))
+        request.session['list1'] = []
+        list1 = request.session.get("list1")
+        list1.append(age)
+        list1.append(gender)
+        list1.append(height)
+        list1.append(weight)
+        list1.append(bp_hi)
+        list1.append(bp_lo)
+        list1.append(cholestrol)
+        list1.append(gluc)
+        list1.append(smoke)
+        list1.append(alcohol)
+        list1.append(activity)
+        project = joblib.load("heart_model_2.sav")
+        ans = project.predict([list1])
+        if ans == 1:
+            message = "Positive"
+        elif ans == 0:
+            message = "Negative"
+        my_dict = {
+            "message": message,
+        }
+        del request.session['list1']
+        return render(request, "heart_desease_prediction_2.html",context=my_dict)
+        
+    return render(request, "heart_desease_prediction_2.html")
