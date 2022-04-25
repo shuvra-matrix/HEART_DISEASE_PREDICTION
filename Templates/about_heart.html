@@ -1,0 +1,48 @@
+{% extends 'header.html' %}
+{% load static %}
+{% block body_block %}
+
+<div class="text_div">
+    <p class="main_text">Heart Disease </p>
+</div>
+
+<div class="about_main">
+
+    <a href="{%url 'pre:about1' %}">
+    <div class="about">
+        <div class="img_about">
+            <img class="img_about_img"  src="{%static 'images/1.jpg' %}" alt="">
+        </div>
+        <div class="text_about">
+            <P>About Heart Disease</P>
+        </div>
+    </div>
+    </a>
+
+
+    <a href="{%url 'pre:about2' %}">
+    <div class="about">
+        <div class="img_about">
+            <img class="img_about_img" src="{%static 'images/2.jpg' %}" alt="">
+        </div>
+        <div class="text_about">
+            <p>Know Your Risk For Heart Disease</p>
+    </div>
+    </div>
+    </a>
+
+    <a href="{%url 'pre:about3' %}">
+    <div class="about">
+        <div class="img_about">
+            <img class="img_about_img" src="{%static 'images/3.jpg' %}" alt="">
+        </div>
+        <div class="text_about">
+            <p>Prevent Heart Disease</p>
+        </div>
+    </div>
+    </a>
+
+</div>
+</div>
+
+{% endblock %}
