@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-
+{% load pwa %} 
 {% load static %}
 <html lang="en">
 <head>
- 
+     {% pwa_meta_data %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +16,7 @@
     
 </head>
 <body>
+   {% pwa_meta_script %}
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: rgba(255, 255, 255, 0) !important;">
   <div class="container-fluid">
     <a class="navbar-brand" href="{%url 'pre:index' %}"><img style="width: 100px;" src="{% static 'images/arrow.png' %}" alt=""></a>
