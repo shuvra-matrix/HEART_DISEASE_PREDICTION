@@ -171,8 +171,8 @@ PWA_CONFIG = {
     "lang": "en",
     "dir": "ltr",
     "description": "Heart Disease Prediction",
-    "version": "1.1",
-    "manifest_version": "1.0",
+    "version": "2.1",
+    "manifest_version": "2.0",
     "permissions": [
             "notifications",
             "webRequest"
