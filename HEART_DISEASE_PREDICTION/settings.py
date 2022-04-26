@@ -155,7 +155,17 @@ PWA_CONFIG = {
                 "src": "/static/images/arrow_1_144x144.png",
                 "type": "image/png",
                 "sizes": "144x144"
-            }
+            },
+        {
+                "src": "/static/images/arrow_384x384.png",
+                "type": "image/png",
+                        "sizes": "384x384"
+        },
+        {
+                "src": "/static/images/arrow_512x512.png",
+                "type": "image/png",
+                        "sizes": "512x512"
+        }
 
     ],
     "lang": "en",
