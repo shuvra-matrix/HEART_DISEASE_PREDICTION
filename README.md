@@ -1,6 +1,6 @@
 # HEART_DISEASE_PREDICTION
 Web App link:
-<a href="https://heartdiseaseapp.herokuapp.com/">https://heartdiseaseapp.herokuapp.com/</a>
+<a href="https://diseasepredictionheart.herokuapp.com/">https://diseasepredictionheart.herokuapp.com/</a>
 
 <h4> My Project aims to foresee the odds of having heart disease as probable cause of 
 computerized prediction of heart disease that is helpful in the medical field for clinicians and 
