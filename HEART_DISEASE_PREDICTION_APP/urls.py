@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 from . import views
+from django.views.generic import TemplateView
 
 app_name = "pre"
 
@@ -14,4 +15,5 @@ urlpatterns = [
     path("Prevent Heart Disease", views.about3, name="about3"),
     path("Instruction", views.ins, name="ins"),
     path("About", views.about4, name="about4"),
+    path('offline/', TemplateView.as_view(template_name="offline.html")),
 ]
